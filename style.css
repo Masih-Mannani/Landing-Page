@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body {
+body
+,button {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -55,3 +56,66 @@ nav {
     cursor: pointer;
 }
 .cart img{ width: 100%;   object-fit: contain;}
+
+
+
+/*...main-section...*/
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 3rem;
+    font-weight: 500;
+    /*Gradients as background images clipped on top of text isn't supported by all browsers, so it's important to add fallbacks.
+     We can do this by adding a background-color property to the text as well.*/
+    background-color: #494964;
+    background-image: linear-gradient(to right, #2d2d53, #b5b5db);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px ;
+    font-size: 1.5rem;
+    color: #585772;
+}
+.cta{
+    padding: 4rem 0px 0px 0px; /*یه اینسپکت بگیر تا ببینی با پدینگ اینجوری چه اتفاقی رو رقم زدیم. درواقع دکمه هارو به کوشه سمت چپ پایین چسبوندیم و وقتی اندازه دکمه هارو بزرگ میکنیم این افزایش سایز فقط به سمت بالا رخ میده*/
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.cta-add{
+    background: #c36cbb;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    margin-left: 2rem;
+}
+
+.cover{
+    flex: 1;
+}
+.cover img{
+    height: 60vh;
+}
+
